@@ -7,3 +7,8 @@
   - 제품 리스트 페이지 구현 (https://youtu.be/9nDLGbtcn-A)
   - 제품 상세 페이지 구현 (https://www.youtube.com/watch?v=QcNiaDrp2kQ)
   - 제품 등록 페이지 구현 (https://www.youtube.com/watch?v=nCuHP7zgELY&list=PLqbWuGdVBJd38FoWC6IG__QlzBtYoqyfp&index=5)
+  - MariaDB 설치
+  - DB 테이블 설계
+  - SQL 작성하기
+  - 웹서버 구축 (Node.js + Express.js)
+  
