@@ -11,4 +11,5 @@
   - DB 테이블 설계
   - SQL 작성하기
   - 웹서버 구축 (Node.js + Express.js)
+  - DB 연동하기
   
