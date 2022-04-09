@@ -12,4 +12,4 @@
   - SQL 작성하기
   - 웹서버 구축 (Node.js + Express.js)
   - DB 연동하기
-  
+  - 클라이언트 구축 - Vue CLI
