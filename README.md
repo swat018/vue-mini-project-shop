@@ -13,3 +13,4 @@
   - 웹서버 구축 (Node.js + Express.js)
   - DB 연동하기
   - 클라이언트 구축 - Vue CLI
+  - 제품리스트 Vue 컴포넌트 구현
