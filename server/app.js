@@ -13,6 +13,10 @@ app.use(session({
     }
 }));
 
+app.use(express.json({
+    limit: '50mb'
+}));
+
 const server = app.listen(3000, () => {
     console.log('server started. port 3000.');
 });
@@ -61,7 +65,7 @@ app.post('/apirole/:alias', async (request, res) => {
 
 app.post('/api/:alias', async (request, res) => {
     try {
-        res.send(await req.db(request.params.alias))
+        res.send(await req.db(request.params.alias, request.body.param))
     } catch (err) {
         res.status(500).send({
             error: err
