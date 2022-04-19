@@ -22,5 +22,8 @@ module.exports = {
     },
     sellerList: {
         query: `select * from t_selier`
+    },
+    signUp: {
+        query: `insert into t_user set ? on duplicate key update ?`
     }
 }
