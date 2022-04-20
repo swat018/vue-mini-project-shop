@@ -72,9 +72,9 @@ export default {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
           console.log(product_id);
-          // await this.$api("/api/productDelete",{param:[product_id]});
-          // this.getProductList();
-          this.$swal.fire('Saved!', '', 'success')
+          await this.$api("/api/productDelete",{param:[product_id]});
+          this.getProductList();
+          this.$swal.fire('삭제되었습니다.!', '', 'success')
         }
       });
     }

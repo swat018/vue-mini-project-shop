@@ -74,7 +74,7 @@
       </div>
       <div class="mb-3 row">
         <div class="col-6 d-grid p-1">
-          <button type="button" class="btn btn-lg btn-dark">취소하기</button>
+          <button type="button" class="btn btn-lg btn-dark"  @click="gotoList">취소하기</button>
         </div>
         <div class="col-6 d-grid p-1">
           <button type="button" class="btn btn-lg btn-danger">저장하기</button>
