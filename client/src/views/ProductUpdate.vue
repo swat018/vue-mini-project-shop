@@ -30,7 +30,7 @@
         <label className="col-md-3 col-form-label">추가배송비(도서산간)</label>
         <div className="col-md-9">
           <div className="input-group mb-3">
-            <input type="number" className="form-control" v-model="productDetail.add_delivery_price">>
+            <input type="number" className="form-control" v-model="productDetail.add_delivery_price">
             <span className="input-group-text">원</span>
           </div>
         </div>

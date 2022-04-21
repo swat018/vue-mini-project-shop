@@ -20,8 +20,7 @@ module.exports = {
         query: `select * from t_image where product_id = ? and type = 2`
     },
     productInsert: {
-        query: `insert into t_product (product_name, product_price, delivery_price, add_delivery_price, tags, outbound_days, selier_id, category_id)
-        values (?, ?, ?, ?, ?, ?, ?, ?)`
+        query: `insert into t_product set ?`
     },
     productImageInsert: {
         query: `insert into t_image (product_id, type, path)
@@ -32,6 +31,9 @@ module.exports = {
     },
     sellerList: {
         query: `select * from t_selier`
+    },
+    categoryList: {
+        query: `select * from t_category`
     },
     signUp: {
         query: `insert into t_user set ? on duplicate key update ?`
