@@ -5,7 +5,7 @@
       <div class="mb-3 row">
         <label class="col-sm-3 col-form-label">제품명</label>
         <div class="col-md-9">
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" v-model="product_name">
         </div>
       </div>
       <div class="mb-3 row">
@@ -87,6 +87,17 @@
 <script>
 export default {
   name: "ProductCreate",
+  data() {
+    return {
+      product_name: "",
+      product_price: 0,
+      delivery_price: 0,
+      add_delivery_priceL: 0,
+      tags: "",
+      outbound_days: 0,
+      seller_id: 1
+    }
+  },
   computed: {
     user() {
       return this.$store.state.user;
