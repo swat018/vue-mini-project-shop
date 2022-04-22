@@ -1,4 +1,7 @@
 import axios from 'axios';
+axios.defaults.baseURL = 'http://localhost:3000';
+axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 
 export default {
     methods: {
@@ -11,7 +14,14 @@ export default {
                 console.log(e);
             })).data;
         },
-        $CurrencyFormat(value, format = '#,###') {
+        $base64(file) {
+            return new Promise(resolve => {
+                var a = new FileReader();
+                a.onload = e => resolve(e.target.result);
+                a.readAsDataURL(file);
+            });
+        },
+        $currencyFormat(value, format = '#,###') {
             if (value == 0 || value == null) return 0;
 
             var currency = format.substring(0, 1);

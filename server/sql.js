@@ -23,8 +23,13 @@ module.exports = {
         query: `insert into t_product set ?`
     },
     productImageInsert: {
-        query: `insert into t_image (product_id, type, path)
-        values (?, ?, ?)`
+        query: `insert into t_image set ?`
+    },
+    imageList: {
+        query: `select * from t_image where product_id=?`
+    },
+    imageDelete: {
+        query: `delete from t_image where id=?`
     },
     productDelete: {
       query: `delete from t_product where id=?`
